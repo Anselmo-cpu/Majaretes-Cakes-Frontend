@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Majaretes Cakes - Inicio</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="./styles.css/styles.css">
+    <link rel="icon" href="./assets/logo2.png" type="image/png">
 </head>
 <body>
     <!-- ===== HEADER ===== -->
     <header class="header">
         <div class="container header-container">
             <div class="logo">
-                <img src="assets/logo.png" alt="Majaretes Cakes Logo">
+                <img src="./assets/logo2.png" alt="Majaretes Cakes Logo">
                 <h1>Majaretes Cakes</h1>
             </div>
-
             <nav class="nav">
                 <ul class="nav-links">
                     <li><a href="#" class="active">Inicio</a></li>
@@ -28,11 +27,10 @@
         </div>
     </header>
 
-    <!-- ===== MAIN ===== -->
-    <main>
-        <!-- Hero / Bienvenida -->
-        <section class="hero">
-            <div class="container hero-content">
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
                 <h2>El arte de crear dulces momentos 🍰</h2>
                 <p>
                     En <strong>Majaretes Cakes</strong>, cada torta cuenta una historia.  
@@ -40,28 +38,53 @@
                 </p>
                 <a href="pages/catalogo.html" class="btn-primary">Ver nuestro catálogo</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Productos destacados -->
-        <section class="productos-destacados">
-            <div class="container">
-                <h2>Productos Destacados</h2>
-                <div class="productos-grid">
-                    <!-- Aquí se agregan los productos luego -->
+    <!-- ===== PRODUCTOS DESTACADOS ===== -->
+    <section class="productos-destacados">
+        <div class="container">
+            <h2>Productos Destacados</h2>
+            <div class="productos-grid">
+                <div class="producto">
+                    <img src="./assets/cakes tematicos/1.jpeg" alt="Cake Temática 1">
+                    <h4>Cake Temática 1</h4>
+                    <p>Deliciosa torta decorada con temática personalizada.</p>
+                    <a href="pages/pedido.html" class="btn-primary">Pedir ahora</a>
                 </div>
+                <div class="producto">
+                    <img src="./assets/cakes tematicos/2.jpeg" alt="Dripcake">
+                    <h4>Dripcake</h4>
+                    <p>Torta con efecto “drip” y decoración moderna.</p>
+                    <a href="pages/pedido.html" class="btn-primary">Pedir ahora</a>
+                </div>
+                <div class="producto">
+                    <img src="./assets/cakes tematicos/3.jpeg" alt="Cake Sport">
+                    <h4>Cake Sport</h4>
+                    <p>Torta deportiva para fanáticos de cualquier disciplina.</p>
+                    <a href="pages/pedido.html" class="btn-primary">Pedir ahora</a>
+                </div>
+                <div class="producto">
+                    <img src="./assets/cakes tematicos/4.jpeg" alt="Dripcake">
+                    <h4>Dripcake</h4>
+                    <p>Torta con efecto “drip” y decoración moderna.</p>
+                    <a href="pages/pedido.html" class="btn-primary">Pedir ahora</a>
+                </div>               
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Sobre nosotros -->
-        <section class="sobre-nosotros">
-            <div class="container">
-                <h2>Sobre Nosotros</h2>
-                <p>
-                    Majaretes Cakes se dedica a crear tortas personalizadas para cada ocasión, con amor y calidad.
-                </p>
-            </div>
-        </section>
-    </main>
+    <!-- ===== SOBRE NOSOTROS ===== -->
+    <section class="sobre-nosotros">
+        <div class="container text-center">
+            <h2>Sobre Majaretes Cakes</h2>
+            <p>
+                ¡Hola! Soy Yennifer, una pastelera venezolana que encontró en Buenos Aires un nuevo hogar y una gran pasión: crear tortas que cuentan historias.
+                Hace más de cinco años nació Majaretes Cakes, un emprendimiento que lleva el nombre de un postre típico de mi país, como una forma de tener siempre un pedacito de Venezuela conmigo, sin importar la distancia.
+            </p>
+            <a href="pages/nosotros.html" class="btn-primary">Conocé más</a>
+        </div>
+    </section>
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
@@ -77,6 +100,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="./JS/main.js"></script>
 </body>
 </html>

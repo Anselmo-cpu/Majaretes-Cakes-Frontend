@@ -1,0 +1,253 @@
+/* ===== PALETA DE COLORES ===== */
+:root {
+  --rosa-principal: #AF1F50;
+  --rosa-claro: #FD7889;
+  --celeste: #74BEE1;
+  --beige: #F9F0DF;
+  --texto: #3a3a3a;
+}
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--beige);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+/* ===== CONTENEDOR GENERAL ===== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background-color: var(--rosa-principal);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* ===== NAV ===== */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--celeste);
+}
+
+/* ===== MENU HAMBURGUESA ===== */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(to bottom right, var(--rosa-claro), var(--celeste));
+  color: white;
+  padding: 6rem 1rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background-color: white;
+  color: var(--rosa-principal);
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--rosa-principal);
+  color: white;
+}
+
+/* ===== SECCIONES ===== */
+section {
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--rosa-principal);
+  margin-bottom: 2rem;
+}
+
+/* ===== PRODUCTOS DESTACADOS ===== */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.producto {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+/* ===== SOBRE NOSOTROS ===== */
+.sobre-nosotros {
+  background-color: white;
+  color: var(--texto);
+}
+
+.sobre-nosotros p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: var(--rosa-principal);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: var(--celeste);
+}
+
+/* ===== BUSCADOR ===== */
+.buscador-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 1.5rem auto 3rem auto;
+  text-align: center;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 50px;
+  border: 2px solid var(--rosa-principal);
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+#searchInput:focus {
+  border-color: var(--celeste);
+  box-shadow: 0 0 8px rgba(116, 190, 225, 0.5);
+}
+
+#searchInput::placeholder {
+  color: var(--texto);
+  font-weight: 500;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--rosa-principal);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .nav-links.nav-open {
+    display: flex; /* <-- ahora coincide con el JS */
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
