@@ -1,37 +1,41 @@
 // ===== Buscador de productos en catálogo =====
 const searchInput = document.getElementById("searchInput");
 
-if (searchInput) { // Verifica que exista el input en esta página
-    const productos = document.querySelectorAll(".productos-grid .producto");
+if (searchInput) {
+    const secciones = document.querySelectorAll(".catalogo .productos-grid");
 
-    // Crear elemento de mensaje cuando no hay resultados
-    const contenedorCatalogo = document.querySelector(".catalogo .container");
-    let mensajeNoResultados = document.createElement("p");
-    mensajeNoResultados.textContent = "No se encontraron productos.";
-    mensajeNoResultados.style.display = "none"; // oculto por defecto
-    mensajeNoResultados.classList.add("no-result");
-    contenedorCatalogo.insertBefore(mensajeNoResultados, contenedorCatalogo.querySelector(".btn-pedido-container"));
+    // Crear un mensaje de "no resultados" para cada sección
+    secciones.forEach(grid => {
+        let mensajeNoResultados = document.createElement("p");
+        mensajeNoResultados.textContent = "No se encontraron productos.";
+        mensajeNoResultados.style.display = "none";
+        mensajeNoResultados.classList.add("no-result");
+        grid.parentNode.insertBefore(mensajeNoResultados, grid.nextElementSibling);
+    });
 
-    // Función de filtrado
     const filtrarProductos = () => {
         const filtro = searchInput.value.toLowerCase();
-        let countVisible = 0;
 
-        productos.forEach(producto => {
-            const nombre = producto.getAttribute("data-nombre").toLowerCase();
-            if (nombre.includes(filtro)) {
-                producto.style.display = "block";
-                countVisible++;
-            } else {
-                producto.style.display = "none";
-            }
+        secciones.forEach(grid => {
+            const productos = grid.querySelectorAll(".producto");
+            let countVisible = 0;
+
+            productos.forEach(producto => {
+                const nombre = producto.getAttribute("data-nombre").toLowerCase();
+                if (nombre.includes(filtro)) {
+                    producto.style.display = "block";
+                    countVisible++;
+                } else {
+                    producto.style.display = "none";
+                }
+            });
+
+            // Mostrar mensaje si no hay resultados en esta sección
+            const mensajeNoResultados = grid.parentNode.querySelector(".no-result");
+            mensajeNoResultados.style.display = countVisible === 0 ? "block" : "none";
         });
-
-        // Mostrar mensaje si no hay resultados
-        mensajeNoResultados.style.display = countVisible === 0 ? "block" : "none";
     };
 
-    // Ejecutar filtrado en cada tecla
     searchInput.addEventListener("keyup", filtrarProductos);
 }
 
@@ -41,6 +45,6 @@ const navLinks = document.querySelector('.nav-links');
 
 if (menuToggle && navLinks) {
     menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('nav-open'); // <-- ahora coincide con el CSS
+        navLinks.classList.toggle('nav-open');
     });
 }

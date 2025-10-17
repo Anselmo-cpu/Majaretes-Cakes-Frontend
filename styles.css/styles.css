@@ -125,6 +125,13 @@ body {
   color: white;
 }
 
+/* ===== MAIN GENERAL ===== */
+main {
+  background-color: white;
+  padding-top: 70px; /* altura del header sticky */
+  padding-bottom: 2rem;
+}
+
 /* ===== SECCIONES ===== */
 section {
   padding: 5rem 1rem;
@@ -223,8 +230,231 @@ h2 {
   font-weight: 500;
 }
 
+/* ===== MAIN PEDIDOS ===== */
+.pedido-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas: info y imagen */
+  gap: 3rem;
+  align-items: center;
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pedido-info h1 {
+  font-size: 2rem;
+  color: var(--rosa-principal);
+  margin-bottom: 1.5rem;
+}
+
+.pedido-info p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.pedido-info ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.pedido-info ul li {
+  background-color: var(--beige);
+  border-left: 4px solid var(--rosa-principal);
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pedido-contacto {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.pedido-botones {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pedido-btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--rosa-principal);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pedido-btn:hover {
+  background-color: var(--celeste);
+  color: white;
+}
+
+/* ===== IMAGEN ===== */
+.pedido-img img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== NOSOTROS GRID ===== */
+.nosotros-grid .nosotros-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+  padding: 3rem 0;
+}
+
+/* Mini-grid de texto */
+.nosotros-texto {
+  display: grid;
+  gap: 1rem;
+}
+
+.nosotros-texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--texto);
+}
+
+.nosotros-texto strong {
+  color: var(--rosa-principal);
+}
+
+/* Redes en grid de botones */
+.nosotros-redes h3 {
+  font-size: 1.5rem;
+  color: var(--rosa-principal);
+  margin-bottom: 1rem;
+}
+
+.redes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.btn-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--rosa-principal);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn-redes:hover {
+  background-color: var(--celeste);
+  color: white;
+}
+
+/* ===== NOSOTROS GRID ===== */
+.nosotros-grid .container {
+  background-color: white;        /* Fondo del box */
+  padding: 4rem 2rem;             /* Espaciado interno */
+  border-radius: 15px;            /* Bordes redondeados */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Grid principal: texto + redes */
+.nosotros-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Texto ocupa más espacio que redes */
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Mini-grid para cada párrafo de texto */
+.nosotros-texto {
+  display: grid;
+  gap: 1rem;
+}
+
+.nosotros-texto p strong {
+  color: var(--rosa-principal);
+  font-weight: 600;
+}
+
+/* Redes sociales */
+.nosotros-redes h3 {
+  margin-bottom: 1rem;
+  color: var(--rosa-principal);
+}
+
+.redes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.btn-redes {
+  display: block;
+  text-decoration: none;
+  background-color: var(--rosa-principal);
+  color: white;
+  padding: 0.8rem;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-redes:hover {
+  background-color: var(--celeste);
+}
 
 /* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .nosotros-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .nosotros-grid .nosotros-content {
+    grid-template-columns: 1fr;
+  }
+
+  .redes-grid {
+    grid-template-columns: 1fr 1fr; /* Dos columnas en tablets/móviles grandes */
+  }
+}
+
+@media (max-width: 500px) {
+  .redes-grid {
+    grid-template-columns: 1fr; /* Una columna en móviles pequeños */
+  }
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .pedido-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .pedido-info h1 {
+    font-size: 1.8rem;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
