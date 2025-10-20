@@ -416,6 +416,33 @@ h2 {
   background-color: var(--celeste);
 }
 
+/* ----------------------- */
+/* Scroll suave y natural  */
+/* ----------------------- */
+
+html {
+    scroll-behavior: smooth;        /* Habilita scroll suave */
+    scroll-padding-top: 100px;      /* Ajustá según altura de tu header */
+}
+
+/* Opcional: mejorar transición visual */
+body {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Para enlaces internos */
+a[href^="#"] {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Para que el header no tape la sección destino */
+section {
+    scroll-margin-top: 100px; /* Igual que scroll-padding-top */
+}
+
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .nosotros-content {

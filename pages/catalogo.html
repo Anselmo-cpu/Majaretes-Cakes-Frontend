@@ -3,10 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Básico -->
     <title>Majaretes Cakes - Catálogo</title>
-    <link rel="stylesheet" href="../styles.css/styles.css">
+    <meta name="description" content="Explora el catálogo de Majaretes Cakes: tortas, cupcakes, postres y más, todos hechos artesanalmente con amor y creatividad.">
+    <meta name="keywords" content="Majaretes Cakes, catálogo, tortas, cupcakes, postres, repostería artesanal, dulces">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
     <link rel="icon" href="../assets/logo2.png" type="image/png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Majaretes Cakes - Catálogo">
+    <meta property="og:description" content="Explora el catálogo de Majaretes Cakes: tortas, cupcakes, postres y más, todos hechos artesanalmente con amor y creatividad.">
+    <meta property="og:image" content="https://majaretescakes.com/assets/logo2.png">
+    <meta property="og:url" content="https://majaretescakes.com/catalogo">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Majaretes Cakes - Catálogo">
+    <meta name="twitter:description" content="Explora el catálogo de Majaretes Cakes: tortas, cupcakes, postres y más, todos hechos artesanalmente con amor y creatividad.">
+    <meta name="twitter:image" content="https://majaretescakes.com/assets/logo2.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles.css/styles.css">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://majaretescakes.com/catalogo">
 </head>
+
 <body>
     <!-- HEADER -->
     <header class="header">
@@ -19,6 +45,7 @@
                 <ul class="nav-links">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="catalogo.html" class="active">Catálogo</a></li>
+                    <li><a href="postres.html">Postres</a></li>
                     <li><a href="pedido.html">Haz tu pedido</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                 </ul>
@@ -28,490 +55,75 @@
     </header>
 
     <!-- MAIN -->
-<main>
-    <section class="catalogo">
-        <div class="container">
-            <h2>Catálogo de Tortas y Postres</h2>
-            
-            <!-- Buscador de productos -->
-            <div class="buscador-productos">
-                <input type="text" id="searchInput" placeholder="Buscar torta, cupcake o cookie...">
+    <main>
+        <section class="catalogo">
+            <div class="container">
+                <h2>Explora Nuestros Productos</h2>
+
+                <div class="productos-grid">
+                    <!-- Temáticas -->
+                    <div class="producto">
+                        <img src="../assets/cakes tematicos/1.jpeg" alt="Torta Temática">
+                        <h4>Cakes Temáticas</h4>
+                        <p>Diseños únicos inspirados en tus personajes favoritos.</p>
+                        <a href="postres.html#cakes-tematicas" class="btn-primary">Ver más</a>
+                    </div>
+
+                    <!-- Sport -->
+                    <div class="producto">
+                        <img src="../assets/cakes sport/1.jpeg" alt="Torta Sport">
+                        <h4>Cakes Sport</h4>
+                        <p>Perfectas para los amantes del deporte y la energía.</p>
+                        <a href="postres.html#cakes-sport" class="btn-primary">Ver más</a>
+                    </div>
+
+                    <!-- Bodas -->
+                    <div class="producto">
+                        <img src="../assets/cakes boda/1.jpeg" alt="Torta de Bodas">
+                        <h4>Cakes Bodas</h4>
+                        <p>Elegancia y dulzura para tu día especial.</p>
+                        <a href="postres.html#cakes-bodas" class="btn-primary">Ver más</a>
+                    </div>
+
+                    <!-- Dripcakes -->
+                    <div class="producto">
+                        <img src="../assets/cakes drip/1.jpeg" alt="Drip Cake">
+                        <h4>Dripcakes</h4>
+                        <p>Con ese toque irresistible de chocolate goteante.</p>
+                        <a href="postres.html#dripcakes" class="btn-primary">Ver más</a>
+                    </div>
+
+                    <!-- Cakes Vintage -->
+                    <div class="producto">
+                        <img src="../assets/cakes vintage/1.jpeg" alt="Cakes Vintage">
+                        <h4>Cakes Vintage</h4>
+                        <p>Diseños clásicos con un toque elegante y romántico.</p>
+                        <a href="postres.html#cakes-vintage" class="btn-primary">Ver más</a>
+                    </div>
+
+                    <!-- Memes Cakes -->
+                    <div class="producto">
+                        <img src="../assets/cakes memes/xd.jpeg" alt="Torta Meme">
+                        <h4>Memes Cakes</h4>
+                        <p>Divertidas y originales, para celebrar con humor.</p>
+                        <a href="postres.html#memes-cakes" class="btn-primary">Ver más</a>
+                    </div>
+
+                    <!-- Cookies & Cupcakes -->
+                    <div class="producto">
+                        <img src="../assets/cookiescapcukes/1.jpeg" alt="Cupcakes y Cookies">
+                        <h4>Cookies & Cupcakes</h4>
+                        <p>Pequeños placeres llenos de sabor y ternura.</p>
+                        <a href="postres.html#cookies-cupcakes" class="btn-primary">Ver más</a>
+                    </div>
+                </div>
+
+                <div class="btn-pedido-container">
+                    <a href="pedido.html" class="btn-primary">Haz tu pedido</a>
+                </div>
             </div>
-
-            <!-- ===== Cakes Temáticas ===== -->
-            <section class="cakes-tematicas">
-                <h3>Cakes Temáticas</h3>
-                <div class="productos-grid">
-                    <div class="producto" data-nombre="Torta Harry Potter">
-                        <img src="../assets/cakes tematicos/1.jpeg" alt="Torta Harry Potter">
-                        <h4>Torta Harry Potter</h4>
-                        <p>Personalizada con temática de Hogwarts.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/2.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/3.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/4.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/5.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Harry Potter">
-                        <img src="../assets/cakes tematicos/6.jpeg" alt="Torta Harry Potter">
-                        <h4>Torta Harry Potter</h4>
-                        <p>Personalizada con temática de Hogwarts.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/7.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/8.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/9.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/10.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Harry Potter">
-                        <img src="../assets/cakes tematicos/11.jpeg" alt="Torta Harry Potter">
-                        <h4>Torta Harry Potter</h4>
-                        <p>Personalizada con temática de Hogwarts.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/12.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/13.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/14.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/15.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Harry Potter">
-                        <img src="../assets/cakes tematicos/16.jpeg" alt="Torta Harry Potter">
-                        <h4>Torta Harry Potter</h4>
-                        <p>Personalizada con temática de Hogwarts.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/17.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/18.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/19.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/20.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Harry Potter">
-                        <img src="../assets/cakes tematicos/21.jpeg" alt="Torta Harry Potter">
-                        <h4>Torta Harry Potter</h4>
-                        <p>Personalizada con temática de Hogwarts.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/22.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/23.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/24.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/25.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Harry Potter">
-                        <img src="../assets/cakes tematicos/26.jpeg" alt="Torta Harry Potter">
-                        <h4>Torta Harry Potter</h4>
-                        <p>Personalizada con temática de Hogwarts.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/27.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/28.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/29.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/30.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Harry Potter">
-                        <img src="../assets/cakes tematicos/31.jpeg" alt="Torta Harry Potter">
-                        <h4>Torta Harry Potter</h4>
-                        <p>Personalizada con temática de Hogwarts.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/32.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/33.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/34.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/35.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Harry Potter">
-                        <img src="../assets/cakes tematicos/36.jpeg" alt="Torta Harry Potter">
-                        <h4>Torta Harry Potter</h4>
-                        <p>Personalizada con temática de Hogwarts.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/37.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/38.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/39.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Disney">
-                        <img src="../assets/cakes tematicos/40.jpeg" alt="Torta Disney">
-                        <h4>Torta Disney</h4>
-                        <p>Celebra con tus personajes favoritos.</p>
-                    </div>
-                </div>
-                <div class="btn-pedido-container">
-                    <a href="pedido.html" class="btn-primary">Haz tu pedido</a>
-                </div>
-            </section>
-
-            <!-- ===== Cakes Sport ===== -->
-            <section class="cakes-sport">
-                <h3>Cakes Sport</h3>
-                <div class="productos-grid">
-                    <div class="producto" data-nombre="Torta Fútbol">
-                        <img src="../assets/cakes sport/1.jpeg" alt="Torta Fútbol">
-                        <h4>Torta Fútbol</h4>
-                        <p>Ideal para fans del deporte.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Fútbol">
-                        <img src="../assets/cakes sport/2.jpeg" alt="Torta Fútbol">
-                        <h4>Torta Fútbol</h4>
-                        <p>Ideal para fans del deporte.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Fútbol">
-                        <img src="../assets/cakes sport/3.jpeg" alt="Torta Fútbol">
-                        <h4>Torta Fútbol</h4>
-                        <p>Ideal para fans del deporte.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Fútbol">
-                        <img src="../assets/cakes sport/4.jpeg" alt="Torta Fútbol">
-                        <h4>Torta Fútbol</h4>
-                        <p>Ideal para fans del deporte.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Fútbol">
-                        <img src="../assets/cakes sport/5.jpeg" alt="Torta Fútbol">
-                        <h4>Torta Fútbol</h4>
-                        <p>Ideal para fans del deporte.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Fútbol">
-                        <img src="../assets/cakes sport/6.jpeg" alt="Torta Fútbol">
-                        <h4>Torta Fútbol</h4>
-                        <p>Ideal para fans del deporte.</p>
-                    </div>
-                </div>
-                <div class="btn-pedido-container">
-                    <a href="pedido.html" class="btn-primary">Haz tu pedido</a>
-                </div>
-            </section>
-
-            <!-- ===== Cakes Bodas ===== -->
-            <section class="cakes-bodas">
-                <h3>Cakes Bodas</h3>
-                <div class="productos-grid">
-                    <div class="producto" data-nombre="Torta Bodas Blanca">
-                        <img src="../assets/cakes boda/1.jpeg" alt="Torta Bodas Blanca">
-                        <h4>Torta Bodas Blanca</h4>
-                        <p>Elegante y sofisticada para tu gran día.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Bodas Blanca">
-                        <img src="../assets/cakes boda/2.jpeg" alt="Torta Bodas Blanca">
-                        <h4>Torta Bodas Blanca</h4>
-                        <p>Elegante y sofisticada para tu gran día.</p>
-                    </div>
-                </div>
-                <div class="btn-pedido-container">
-                    <a href="pedido.html" class="btn-primary">Haz tu pedido</a>
-                </div>
-            </section>
-
-            <!-- ===== Dripcakes ===== -->
-            <section class="dripcakes">
-                <h3>Dripcakes</h3>
-                <div class="productos-grid">
-                    <div class="producto" data-nombre="Drip Cake Chocolate">
-                        <img src="../assets/cakes drip/1.jpeg" alt="Drip Cake Chocolate">
-                        <h4>Drip Cake Chocolate</h4>
-                        <p>Con cobertura goteante de chocolate.</p>
-                    </div>
-                    <div class="producto" data-nombre="Drip Cake Chocolate">
-                        <img src="../assets/cakes drip/2.jpeg" alt="Drip Cake Chocolate">
-                        <h4>Drip Cake Chocolate</h4>
-                        <p>Con cobertura goteante de chocolate.</p>
-                    </div>
-                    <div class="producto" data-nombre="Drip Cake Chocolate">
-                        <img src="../assets/cakes drip/3.jpeg" alt="Drip Cake Chocolate">
-                        <h4>Drip Cake Chocolate</h4>
-                        <p>Con cobertura goteante de chocolate.</p>
-                    </div>
-                    <div class="producto" data-nombre="Drip Cake Chocolate">
-                        <img src="../assets/cakes drip/4.jpeg" alt="Drip Cake Chocolate">
-                        <h4>Drip Cake Chocolate</h4>
-                        <p>Con cobertura goteante de chocolate.</p>
-                    </div>
-                    <div class="producto" data-nombre="Drip Cake Chocolate">
-                        <img src="../assets/cakes drip/5.jpeg" alt="Drip Cake Chocolate">
-                        <h4>Drip Cake Chocolate</h4>
-                        <p>Con cobertura goteante de chocolate.</p>
-                    </div>
-                    <div class="producto" data-nombre="Drip Cake Chocolate">
-                        <img src="../assets/cakes drip/6.jpeg" alt="Drip Cake Chocolate">
-                        <h4>Drip Cake Chocolate</h4>
-                        <p>Con cobertura goteante de chocolate.</p>
-                    </div>
-                    <div class="producto" data-nombre="Drip Cake Chocolate">
-                        <img src="../assets/cakes drip/7.jpeg" alt="Drip Cake Chocolate">
-                        <h4>Drip Cake Chocolate</h4>
-                        <p>Con cobertura goteante de chocolate.</p>
-                    </div>
-                    <div class="producto" data-nombre="Drip Cake Chocolate">
-                        <img src="../assets/cakes drip/8.jpeg" alt="Drip Cake Chocolate">
-                        <h4>Drip Cake Chocolate</h4>
-                        <p>Con cobertura goteante de chocolate.</p>
-                    </div>
-                    <div class="producto" data-nombre="Drip Cake Chocolate">
-                        <img src="../assets/cakes drip/9.jpeg" alt="Drip Cake Chocolate">
-                        <h4>Drip Cake Chocolate</h4>
-                        <p>Con cobertura goteante de chocolate.</p>
-                    </div>
-                    <div class="producto" data-nombre="Drip Cake Chocolate">
-                        <img src="../assets/cakes drip/10.jpeg" alt="Drip Cake Chocolate">
-                        <h4>Drip Cake Chocolate</h4>
-                        <p>Con cobertura goteante de chocolate.</p>
-                    </div>
-                    <div class="producto" data-nombre="Drip Cake Chocolate">
-                        <img src="../assets/cakes drip/11.jpeg" alt="Drip Cake Chocolate">
-                        <h4>Drip Cake Chocolate</h4>
-                        <p>Con cobertura goteante de chocolate.</p>
-                    </div>
-                    <div class="producto" data-nombre="Drip Cake Chocolate">
-                        <img src="../assets/cakes drip/12.jpeg" alt="Drip Cake Chocolate">
-                        <h4>Drip Cake Chocolate</h4>
-                        <p>Con cobertura goteante de chocolate.</p>
-                    </div>
-                    <div class="producto" data-nombre="Drip Cake Chocolate">
-                        <img src="../assets/cakes drip/13.jpeg" alt="Drip Cake Chocolate">
-                        <h4>Drip Cake Chocolate</h4>
-                        <p>Con cobertura goteante de chocolate.</p>
-                    </div>
-                    <div class="producto" data-nombre="Drip Cake Chocolate">
-                        <img src="../assets/cakes drip/14.jpeg" alt="Drip Cake Chocolate">
-                        <h4>Drip Cake Chocolate</h4>
-                        <p>Con cobertura goteante de chocolate.</p>
-                    </div>
-                </div>
-                <div class="btn-pedido-container">
-                    <a href="pedido.html" class="btn-primary">Haz tu pedido</a>
-                </div>
-            </section>
-
-            <!-- ===== Memes Cakes ===== -->
-            <section class="memes-cakes">
-                <h3>Memes Cakes</h3>
-                <div class="productos-grid">
-                    <div class="producto" data-nombre="Torta Meme Divertida">
-                        <img src="../assets/cakes memes/negro.jpeg" alt="Torta Meme Divertida">
-                        <h4>Torta Meme Divertida</h4>
-                        <p>Para cumpleaños y risas aseguradas.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Meme Divertida">
-                        <img src="../assets/cakes memes/xd.jpeg" alt="Torta Meme Divertida">
-                        <h4>Torta Meme Divertida</h4>
-                        <p>Para cumpleaños y risas aseguradas.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Meme Divertida">
-                        <img src="../assets/cakes memes/xd1.jpeg" alt="Torta Meme Divertida">
-                        <h4>Torta Meme Divertida</h4>
-                        <p>Para cumpleaños y risas aseguradas.</p>
-                    </div>
-                    <div class="producto" data-nombre="Torta Meme Divertida">
-                        <img src="../assets/cakes memes/xdf.jpeg" alt="Torta Meme Divertida">
-                        <h4>Torta Meme Divertida</h4>
-                        <p>Para cumpleaños y risas aseguradas.</p>
-                    </div>
-                </div>
-                <div class="btn-pedido-container">
-                    <a href="pedido.html" class="btn-primary">Haz tu pedido</a>
-                </div>
-            </section>
-
-            <!-- ===== Cookies & Cupcakes ===== -->
-            <section class="cookies-cupcakes">
-                <h3>Cookies & Cupcakes</h3>
-                <div class="productos-grid">
-                    <div class="producto" data-nombre="Cupcake Unicornio">
-                        <img src="../assets/cookiescapcukes/1.jpeg" alt="Cupcake Unicornio">
-                        <h4>Cupcake Unicornio</h4>
-                        <p>Colores mágicos y sabor delicioso.</p>
-                    </div>
-                    <div class="producto" data-nombre="Cookie Dinosaurio">
-                        <img src="../assets/cookiescapcukes/2.jpeg" alt="Cookie Dinosaurio">
-                        <h4>Cookie Dinosaurio</h4>
-                        <p>Divertida y crujiente para los más chicos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Cupcake Unicornio">
-                        <img src="../assets/cookiescapcukes/3.jpeg" alt="Cupcake Unicornio">
-                        <h4>Cupcake Unicornio</h4>
-                        <p>Colores mágicos y sabor delicioso.</p>
-                    </div>
-                    <div class="producto" data-nombre="Cookie Dinosaurio">
-                        <img src="../assets/cookiescapcukes/4.jpeg" alt="Cookie Dinosaurio">
-                        <h4>Cookie Dinosaurio</h4>
-                        <p>Divertida y crujiente para los más chicos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Cupcake Unicornio">
-                        <img src="../assets/cookiescapcukes/5.jpeg" alt="Cupcake Unicornio">
-                        <h4>Cupcake Unicornio</h4>
-                        <p>Colores mágicos y sabor delicioso.</p>
-                    </div>
-                    <div class="producto" data-nombre="Cookie Dinosaurio">
-                        <img src="../assets/cookiescapcukes/6.jpeg" alt="Cookie Dinosaurio">
-                        <h4>Cookie Dinosaurio</h4>
-                        <p>Divertida y crujiente para los más chicos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Cupcake Unicornio">
-                        <img src="../assets/cookiescapcukes/7.jpeg" alt="Cupcake Unicornio">
-                        <h4>Cupcake Unicornio</h4>
-                        <p>Colores mágicos y sabor delicioso.</p>
-                    </div>
-                    <div class="producto" data-nombre="Cookie Dinosaurio">
-                        <img src="../assets/cookiescapcukes/8.jpeg" alt="Cookie Dinosaurio">
-                        <h4>Cookie Dinosaurio</h4>
-                        <p>Divertida y crujiente para los más chicos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Cupcake Unicornio">
-                        <img src="../assets/cookiescapcukes/9.jpeg" alt="Cupcake Unicornio">
-                        <h4>Cupcake Unicornio</h4>
-                        <p>Colores mágicos y sabor delicioso.</p>
-                    </div>
-                    <div class="producto" data-nombre="Cookie Dinosaurio">
-                        <img src="../assets/cookiescapcukes/10.jpeg" alt="Cookie Dinosaurio">
-                        <h4>Cookie Dinosaurio</h4>
-                        <p>Divertida y crujiente para los más chicos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Cupcake Unicornio">
-                        <img src="../assets/cookiescapcukes/11.jpeg" alt="Cupcake Unicornio">
-                        <h4>Cupcake Unicornio</h4>
-                        <p>Colores mágicos y sabor delicioso.</p>
-                    </div>
-                    <div class="producto" data-nombre="Cookie Dinosaurio">
-                        <img src="../assets/cookiescapcukes/12.jpeg" alt="Cookie Dinosaurio">
-                        <h4>Cookie Dinosaurio</h4>
-                        <p>Divertida y crujiente para los más chicos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Cupcake Unicornio">
-                        <img src="../assets/cookiescapcukes/13.jpeg" alt="Cupcake Unicornio">
-                        <h4>Cupcake Unicornio</h4>
-                        <p>Colores mágicos y sabor delicioso.</p>
-                    </div>
-                    <div class="producto" data-nombre="Cookie Dinosaurio">
-                        <img src="../assets/cookiescapcukes/14.jpeg" alt="Cookie Dinosaurio">
-                        <h4>Cookie Dinosaurio</h4>
-                        <p>Divertida y crujiente para los más chicos.</p>
-                    </div>
-                    <div class="producto" data-nombre="Cupcake Unicornio">
-                        <img src="../assets/cookiescapcukes/15.jpeg" alt="Cupcake Unicornio">
-                        <h4>Cupcake Unicornio</h4>
-                        <p>Colores mágicos y sabor delicioso.</p>
-                    </div>
-                    <div class="producto" data-nombre="Cookie Dinosaurio">
-                        <img src="../assets/cookiescapcukes/16.jpeg" alt="Cookie Dinosaurio">
-                        <h4>Cookie Dinosaurio</h4>
-                        <p>Divertida y crujiente para los más chicos.</p>
-                    </div>
-                </div>
-                <div class="btn-pedido-container">
-                    <a href="pedido.html" class="btn-primary">Haz tu pedido</a>
-                </div>
-            </section>
-
-        </div>
-    </section>
-</main>
-
+        </section>
+    </main>
 
     <!-- FOOTER -->
     <footer class="footer">
