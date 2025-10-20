@@ -1,10 +1,10 @@
 /* ===== PALETA DE COLORES ===== */
 :root {
-  --rosa-principal: #AF1F50;
+  --rosa-principal: #E98A97; /* NAV y FOOTER */
   --rosa-claro: #FD7889;
   --celeste: #74BEE1;
   --beige: #F9F0DF;
-  --texto: #3a3a3a;
+  --texto: #AF1F50; /* nuevo color del texto principal */
 }
 
 /* ===== RESET ===== */
@@ -19,6 +19,7 @@ body {
   background-color: var(--beige);
   color: var(--texto);
   line-height: 1.6;
+  transition: all 0.3s ease-in-out;
 }
 
 /* ===== CONTENEDOR GENERAL ===== */
@@ -43,6 +44,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -58,8 +60,10 @@ body {
 }
 
 .logo h1 {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: 'Great Vibes', cursive; /* tipografía cursiva */
+  color: white;
 }
 
 /* ===== NAV ===== */
@@ -101,8 +105,11 @@ body {
 }
 
 .hero h2 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  font-weight: 700;
   margin-bottom: 1rem;
+  line-height: 1.2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero p {
@@ -128,7 +135,7 @@ body {
 /* ===== MAIN GENERAL ===== */
 main {
   background-color: white;
-  padding-top: 70px; /* altura del header sticky */
+  padding-top: 70px;
   padding-bottom: 2rem;
 }
 
@@ -136,11 +143,12 @@ main {
 section {
   padding: 5rem 1rem;
   text-align: center;
+  color: var(--texto); /* aplica color principal */
 }
 
 h2 {
   font-size: 2rem;
-  color: var(--rosa-principal);
+  color: var(--texto);
   margin-bottom: 2rem;
 }
 
@@ -233,7 +241,7 @@ h2 {
 /* ===== MAIN PEDIDOS ===== */
 .pedido-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Dos columnas: info y imagen */
+  grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: center;
   padding: 4rem 1rem;
@@ -243,7 +251,7 @@ h2 {
 
 .pedido-info h1 {
   font-size: 2rem;
-  color: var(--rosa-principal);
+  color: var(--texto);
   margin-bottom: 1.5rem;
 }
 
@@ -267,6 +275,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  color: var(--texto);
 }
 
 .pedido-contacto {
@@ -311,10 +320,8 @@ h2 {
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: start;
-  padding: 3rem 0;
 }
 
-/* Mini-grid de texto */
 .nosotros-texto {
   display: grid;
   gap: 1rem;
@@ -330,7 +337,6 @@ h2 {
   color: var(--rosa-principal);
 }
 
-/* Redes en grid de botones */
 .nosotros-redes h3 {
   font-size: 1.5rem;
   color: var(--rosa-principal);
@@ -361,26 +367,19 @@ h2 {
   color: white;
 }
 
-/* ===== NOSOTROS GRID ===== */
+/* Mini-grid y containers internos */
 .nosotros-grid .container {
-  background-color: white;        /* Fondo del box */
-  padding: 4rem 2rem;             /* Espaciado interno */
-  border-radius: 15px;            /* Bordes redondeados */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  background-color: white;
+  padding: 4rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Grid principal: texto + redes */
 .nosotros-content {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* Texto ocupa más espacio que redes */
+  grid-template-columns: 2fr 1fr;
   gap: 2rem;
   align-items: start;
-}
-
-/* Mini-grid para cada párrafo de texto */
-.nosotros-texto {
-  display: grid;
-  gap: 1rem;
 }
 
 .nosotros-texto p strong {
@@ -388,60 +387,21 @@ h2 {
   font-weight: 600;
 }
 
-/* Redes sociales */
-.nosotros-redes h3 {
-  margin-bottom: 1rem;
-  color: var(--rosa-principal);
-}
-
-.redes-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-.btn-redes {
-  display: block;
-  text-decoration: none;
-  background-color: var(--rosa-principal);
-  color: white;
-  padding: 0.8rem;
-  border-radius: 50px;
-  text-align: center;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.btn-redes:hover {
-  background-color: var(--celeste);
-}
-
-/* ----------------------- */
-/* Scroll suave y natural  */
-/* ----------------------- */
-
+/* Scroll suave */
 html {
-    scroll-behavior: smooth;        /* Habilita scroll suave */
-    scroll-padding-top: 100px;      /* Ajustá según altura de tu header */
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
-/* Opcional: mejorar transición visual */
-body {
-    transition: all 0.3s ease-in-out;
-}
-
-/* Para enlaces internos */
 a[href^="#"] {
-    cursor: pointer;
-    text-decoration: none;
-    color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
-/* Para que el header no tape la sección destino */
 section {
-    scroll-margin-top: 100px; /* Igual que scroll-padding-top */
+  scroll-margin-top: 100px;
 }
-
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
@@ -449,29 +409,15 @@ section {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-}
 
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
   .nosotros-grid .nosotros-content {
     grid-template-columns: 1fr;
   }
 
   .redes-grid {
-    grid-template-columns: 1fr 1fr; /* Dos columnas en tablets/móviles grandes */
+    grid-template-columns: 1fr 1fr;
   }
-}
 
-@media (max-width: 500px) {
-  .redes-grid {
-    grid-template-columns: 1fr; /* Una columna en móviles pequeños */
-  }
-}
-
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
   .pedido-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -480,9 +426,7 @@ section {
   .pedido-info h1 {
     font-size: 1.8rem;
   }
-}
 
-@media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
@@ -496,15 +440,22 @@ section {
   }
 
   .nav-links.nav-open {
-    display: flex; /* <-- ahora coincide con el JS */
+    display: flex;
   }
 
   .menu-toggle {
     display: block;
   }
+}
 
-  .header-container {
-    flex-wrap: wrap;
-    justify-content: space-between;
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .redes-grid {
+    grid-template-columns: 1fr;
   }
 }
